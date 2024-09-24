@@ -1,9 +1,8 @@
-# Ali Baba's Sneaker Shop
+# Bradley University Photo Gallery
 
-This is a simple webpage for a fake online sneaker store. The page includes a stylish design with a starry background. 
+This project showcases a simple photo gallery featuring images of Bradley University's campuswiith hover effects.
 
-## Features
-- HTML and CSS design
-- Sneaker shop theme
-- Responsive layout
+
+## Live Demo
+To view the page, clone the repository and open `index.html` in a browser.
 
