@@ -3,117 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Baba's Sneaker Shop</title>
+    <title>Bradley University Photo Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            color: #333;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
-            text-align: center;
+            background-color: #f7f7f7;
         }
-
+        
         header {
-            background: #333;
-            color: #fff;
+            background-color: #8a1e04;
+            color: white;
             padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
         }
 
-        header h1 {
+        h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.5rem;
         }
 
-        .hero {
-            background: #333;
-            color: #fff;
-            padding: 50px 20px;
-            margin-bottom: 20px;
-        }
-
-        .hero h2 {
-            font-size: 2em;
-            margin: 0;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-        }
-
-        .products {
+        .gallery-container {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: center;
             padding: 20px;
         }
 
-        .product {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
+        .gallery-item {
+            margin: 15px;
+            border: 5px solid white;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
             width: 300px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
         }
 
-        .product img {
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .product h3 {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-
-        .product p {
-            font-size: 1.2em;
-            color: #f00;
+        .gallery-item img:hover {
+            transform: scale(1.1);
         }
 
         footer {
-            background: #333;
-            color: #fff;
-            padding: 10px;
+            background-color: #8a1e04;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
             position: fixed;
-            bottom: 0;
             width: 100%;
-            font-size: 0.9em;
+            bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            .gallery-item img {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ali Baba's Sneaker Shop</h1>
+        <h1>Bradley University Photo Gallery</h1>
+        <p>Lydia loves you 
+        </p>
     </header>
-    <main>
-        <section class="hero">
-            <h2>Find Your Perfect Pair</h2>
-            <p>Browse our collection of the latest sneakers from top brands.</p>
-        </section>
-        <section class="products">
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Sneaker 1">
-                <h3>Classic White Sneakers</h3>
-                <p>$79.99</p>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Sneaker 2">
-                <h3>Sporty Red Sneakers</h3>
-                <p>$89.99</p>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Sneaker 3">
-                <h3>Casual Blue Sneakers</h3>
-                <p>$99.99</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Ali Baba's Sneaker Shop | All Rights Reserved</p>
-    </footer>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/promoImage-01.jpg" alt="Bradley Campus 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/promoImage-02.jpg" alt="Bradley Campus 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/promoImage-04.jpg" alt="Bradley Campus 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/promoImage-05.jpg" alt="Bradley Campus 4">
+        </div>
+    </div>
+
+    
 </body>
 </html>
+
